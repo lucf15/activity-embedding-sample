@@ -1,0 +1,42 @@
+<resources xmlns:window="http://schemas.android.com/apk/res-auto">
+    <SplitPairRule
+        window:tag="notes-editor"
+        window:splitRatio="0.4"
+        window:splitLayoutDirection="locale"
+        window:splitMinWidthDp="840"
+        window:splitMinHeightDp="480"
+        window:splitMinSmallestWidthDp="480"
+        window:splitMaxAspectRatioInPortrait="1.6"
+        window:finishPrimaryWithSecondary="never"
+        window:finishSecondaryWithPrimary="always"
+        window:clearTop="true">
+        <SplitPairFilter
+            window:primaryActivityName="io.github.lucf15.adaptivenotes.ui.notes.NotesActivity"
+            window:secondaryActivityName="io.github.lucf15.adaptivenotes.ui.editor.NoteEditorActivity" />
+        <DividerAttributes
+            window:embeddingDividerType="draggable"
+            window:embeddingDividerWidthDp="4"
+            window:embeddingDividerColor="#B4BCD1"
+            window:dragRangeMinRatio="0.35"
+            window:dragRangeMaxRatio="0.65" />
+    </SplitPairRule>
+    <SplitPlaceholderRule
+        window:tag="notes-placeholder"
+        window:placeholderActivityName="io.github.lucf15.adaptivenotes.ui.placeholder.NotePlaceholderActivity"
+        window:splitRatio="0.4"
+        window:splitLayoutDirection="locale"
+        window:splitMinWidthDp="840"
+        window:splitMinHeightDp="480"
+        window:splitMinSmallestWidthDp="480"
+        window:splitMaxAspectRatioInPortrait="1.6"
+        window:finishPrimaryWithPlaceholder="adjacent"
+        window:stickyPlaceholder="false">
+        <ActivityFilter window:activityName="io.github.lucf15.adaptivenotes.ui.notes.NotesActivity" />
+        <DividerAttributes
+            window:embeddingDividerType="draggable"
+            window:embeddingDividerWidthDp="4"
+            window:embeddingDividerColor="#B4BCD1"
+            window:dragRangeMinRatio="0.35"
+            window:dragRangeMaxRatio="0.65" />
+    </SplitPlaceholderRule>
+</resources>

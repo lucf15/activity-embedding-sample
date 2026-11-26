@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Fieldnotes" parent="Theme.Fieldnotes.Base">
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowSplashScreenBackground">#E5E7F2</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_fieldnotes_foreground</item>
+    </style>
+</resources>

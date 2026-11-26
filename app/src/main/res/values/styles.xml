@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.Fieldnotes" parent="Theme.Fieldnotes.Base" />
+    <style name="Theme.Fieldnotes.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#E5E7F2</item>
+        <item name="android:colorAccent">#6E4DB9</item>
+        <item name="android:navigationBarColor">#E5E7F2</item>
+        <item name="android:statusBarColor">#E5E7F2</item>
+    </style>
+</resources>
